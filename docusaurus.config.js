@@ -9,7 +9,7 @@ const projectName = "<repository-name>";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'TON Metaspace',
-  tagline: 'Open source metaverse fo The Open Network',
+  tagline: 'Open source metaverse for The Open Network',
   url: 'https://${organizationName}.github.io',
   baseUrl = '/${projectName}/',
   onBrokenLinks: 'throw',
@@ -123,7 +123,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()}TON Metaspace`,
+        copyright: `CC0 ${new Date().getFullYear()}TON Metaspace`,
       },
       prism: {
         theme: lightCodeTheme,
