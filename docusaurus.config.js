@@ -3,13 +3,15 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const organizationName = "<github-organization-name>";
+const projectName = "<repository-name>";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'TON Metaspace',
   tagline: 'Open source metaverse fo The Open Network',
-  url: 'https://github.com',
-  baseUrl = '/metaspace.ton/',
+  url: 'https://${organizationName}.github.io',
+  baseUrl = '/${projectName}/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
