@@ -9,7 +9,7 @@ const config = {
   title: 'TON Metaspace',
   tagline: 'Open source metaverse fo The Open Network',
   url: 'https://github.com',
-  baseUrl = '/metaspace.ton';
+  baseUrl = '/metaspace.ton/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -95,7 +95,7 @@ const config = {
             items: [
               {
                 label: 'TON Metaspace',
-                href: 'https://tonmetaspace.org,
+                href: 'https://tonmetaspace.org',
               },
               {
                 label: 'Telegram',
