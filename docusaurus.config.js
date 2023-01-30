@@ -11,7 +11,7 @@ const config = {
   title: 'TON Metaspace',
   tagline: 'Open source metaverse for The Open Network',
   url: 'https://tonmetaspace.github.io',
-  baseUrl = 'metaspace.ton/',
+  baseUrl = 'tonmetaspace',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -59,9 +59,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'TON Metaspace',
         logo: {
-          alt: 'My Site Logo',
+          alt: '',
           src: 'img/logo.svg',
         },
         items: [
