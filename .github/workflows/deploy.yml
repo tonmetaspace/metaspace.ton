@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - '.github/workflows/deploy.yml'
-      - 'website/**'
+      - 'metaspace.ton/**'
   pull_request:
 
 jobs:
@@ -18,7 +18,7 @@ jobs:
       group: ${{ github.workflow }}-${{ github.ref }}
     defaults:
       run:
-        working-directory: website
+        working-directory: metaspace.ton
     steps:
       - uses: actions/checkout@v3
 
