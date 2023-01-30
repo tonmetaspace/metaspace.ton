@@ -11,7 +11,7 @@ const config = {
   title: 'TON Metaspace',
   tagline: 'Open source metaverse for The Open Network',
   url: 'https://tonmetaspace.github.io',
-  baseUrl = '/metaspace.ton/',
+  baseUrl = 'metaspace.ton/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
