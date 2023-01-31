@@ -11,7 +11,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  //vurl: 'https://your-docusaurus-test-site.com',
+  url: 'https://tonmetaspace.github.io/metaspace.ton',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: 'metaspace.ton/',
