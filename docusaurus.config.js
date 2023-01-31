@@ -3,23 +3,26 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-const organizationName = "<github-organization-name>";
-const projectName = "<repository-name>";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'TON Metaspace',
-  tagline: 'Open source metaverse for The Open Network',
-  url: 'https://tonmetaspace.github.io',
-  baseUrl = '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  tagline: '',
   favicon: 'img/favicon.ico',
-  deploymentBranch: "gh-pages",
+
+  // Set the production url of your site here
+  //vurl: 'https://your-docusaurus-test-site.com',
+  // Set the /<baseUrl>/ pathname under which your site is served
+  // For GitHub pages deployment, it is often '/<projectName>/'
+  baseUrl: 'metaspace.ton/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
+  organizationName: 'tonmetaspace', // Usually your GitHub org/user name.
+  projectName: 'metaspace.ton', // Usually your repo name.
 
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -58,10 +61,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // Replace with your project's social card
+      image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'TON Metaspace',
+        title: 'My Site',
         logo: {
-          alt: '',
+          alt: 'My Site Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -71,9 +76,9 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
+          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/tonmetaspace',
+            href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
             position: 'right',
           },
@@ -95,16 +100,16 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'TON Metaspace',
-                href: 'https://tonmetaspace.org',
+                label: 'Stack Overflow',
+                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
               },
               {
-                label: 'Telegram',
-                href: 'https://t.me/tonmetaspace',
+                label: 'Discord',
+                href: 'https://discordapp.com/invite/docusaurus',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/tonmetaspace',
+                href: 'https://twitter.com/docusaurus',
               },
             ],
           },
@@ -117,12 +122,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/tonmetaspace',
+                href: 'https://github.com/facebook/docusaurus',
               },
             ],
           },
         ],
-        copyright: `CC0 ${new Date().getFullYear()}TON Metaspace`,
+        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
