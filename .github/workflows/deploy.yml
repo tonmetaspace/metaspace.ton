@@ -6,7 +6,10 @@ on:
       - main
     paths:
       - '.github/workflows/deploy.yml'
+      -  gh-pages
+      - 'website/**'
       - 'metaspace.ton/**'
+      main
   pull_request:
 
 jobs:
@@ -18,7 +21,9 @@ jobs:
       group: ${{ github.workflow }}-${{ github.ref }}
     defaults:
       run:
-        working-directory: tonmetaspace
+         gh-pages
+        working-directory: metaspase.ton
+        main
     steps:
       - uses: actions/checkout@v3
 
@@ -47,4 +52,6 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./metaspace.ton/build
+          gh-pages
+        publish_dir: ./metaspace.ton/build
+         main
