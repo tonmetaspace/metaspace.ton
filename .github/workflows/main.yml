@@ -1,4 +1,4 @@
-name: GitHub Pages
+ame: GitHub Pages
 
 on:
   push:
@@ -6,10 +6,7 @@ on:
       - main
     paths:
       - '.github/workflows/deploy.yml'
-      -  gh-pages
-      - 'website/**'
       - 'metaspace.ton/**'
-      main
   pull_request:
 
 jobs:
@@ -21,9 +18,7 @@ jobs:
       group: ${{ github.workflow }}-${{ github.ref }}
     defaults:
       run:
-         gh-pages
-        working-directory: metaspase.ton
-        main
+        working-directory: metaspace.ton
     steps:
       - uses: actions/checkout@v3
 
@@ -43,7 +38,6 @@ jobs:
           key: ${{ runner.os }}-website-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-website-
-
       - run: yarn install --frozen-lockfile
       - run: yarn build
 
@@ -52,6 +46,4 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          gh-pages
-        publish_dir: ./metaspace.ton/build
-         main
+          publish_dir: ./metaspace.ton/build

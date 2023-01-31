@@ -3,13 +3,15 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const organizationName = "<github-organization-name>";
+const projectName = "<repository-name>";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'TON Metaspace',
-  tagline: 'Open source metaverse fo The Open Network',
-  url: 'https://github.com',
-  baseUrl = '/metaspace.ton/',
+  tagline: 'Open source metaverse for The Open Network',
+  url: 'https://tonmetaspace.github.io',
+  baseUrl = 'tonmetaspace',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -17,8 +19,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'tonmetaspace', // Usually your GitHub org/user name.
-  projectName: 'metaspace.ton', // Usually your repo name.
+
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -58,9 +59,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'TON Metaspace',
         logo: {
-          alt: 'My Site Logo',
+          alt: '',
           src: 'img/logo.svg',
         },
         items: [
@@ -121,7 +122,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()}TON Metaspace`,
+        copyright: `CC0 ${new Date().getFullYear()}TON Metaspace`,
       },
       prism: {
         theme: lightCodeTheme,
