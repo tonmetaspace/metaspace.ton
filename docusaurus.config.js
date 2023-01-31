@@ -66,7 +66,7 @@ const config = {
       navbar: {
         title: 'TON Metaspace',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Metaspace Logo',
           src: 'img/logo.svg',
         },
         items: [
