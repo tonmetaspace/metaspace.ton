@@ -133,11 +133,6 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-      colorMode: {
-      defaultMode: 'darkCodeTheme',
-      disableSwitch: false,
-      respectPrefersColorScheme: false,
-    },
     }),
 };
 
