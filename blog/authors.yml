@@ -1,17 +1,17 @@
-endi:
-  name: Endilie Yacop Sucipto
-  title: Maintainer of Docusaurus
-  url: https://github.com/endiliey
-  image_url: https://github.com/endiliey.png
+roman:
+  name: Roman Inozemtsev
+  title: Maintainer of Metaspace
+  url: https://github.com/inozemtsev-roman
+  image_url: https://avatars.githubusercontent.com/u/24755187
 
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
+yuri:
+  name: Yuri Yakovlev
+  title: Maintainer of Metaspace
+  url: https://github.com/iorii9
+  image_url: https://avatars.githubusercontent.com/u/105308592
 
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
+metaspace:
+  name: Metaspace
+  title: Maintainer of Metaspace
+  url: https://github.com/TON-Metaspace
+  image_url: https://avatars.githubusercontent.com/u/124897831
