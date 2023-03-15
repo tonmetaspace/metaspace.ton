@@ -11,7 +11,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Private by design',
-    Svg: require('@site/static/img/pd.svg').default,
+    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
         You control access to your Metaspace, so worlds are only discoverable to people you share the link with.
@@ -20,7 +20,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Works across devices',
-    Svg: require('@site/static/img/wad.svg').default,
+    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
         Guests can join from any device with a modern browser — no downloads required.
@@ -29,7 +29,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Open Source',
-    Svg: require('@site/static/img/os.svg').default,
+    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
         Metaspace is built in the open — you can check out the source code <a target="_blank" rel="noreferrer" href="https://github.com/tonmetaspace" class="primary-link">here</a>.
