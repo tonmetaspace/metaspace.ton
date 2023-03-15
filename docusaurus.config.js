@@ -9,7 +9,7 @@ const katex = require('rehype-katex');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'TON Metaspace',
-  tagline: 'Free metaverse focusing on The Open Network, no strings attached',
+  tagline: 'Free metaverse focusing on The Open Network, no strings attached. Take control of your online communities with a fully open source virtual world platform that you can make your own.',
   favicon: 'img/favicon.ico',
 
   markdown: {

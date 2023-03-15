@@ -10,32 +10,29 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Private by design',
+    Svg: require('@site/static/img/pd.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        You control access to your Metaspace, so worlds are only discoverable to people you share the link with.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Works across devices',
+    Svg: require('@site/static/img/wad.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Guests can join from any device with a modern browser — no downloads required.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Open Source',
+    Svg: require('@site/static/img/os.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Metaspace is built in the open — you can check out the source code <a target="_blank" rel="noreferrer" href="https://github.com/tonmetaspace" class="primary-link">here</a>.
       </>
     ),
   },

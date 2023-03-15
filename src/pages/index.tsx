@@ -17,8 +17,8 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/">
-            Metaspace Tutorial - 5min ⏱️
+            to="https://metaspace.foundation">
+            Explore 💎 Metaspace
           </Link>
         </div>
       </div>
@@ -31,7 +31,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="Free metaverse focusing on The Open Network, no strings attached">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
