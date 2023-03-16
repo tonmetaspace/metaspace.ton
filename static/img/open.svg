@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1041.277"
+   height="554.141"
+   viewBox="0 0 1041.277 554.141"
+   version="1.1"
+   id="svg160"
+   sodipodi:docname="undraw_docusaurus_react.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs164" />
+  <sodipodi:namedview
+     id="namedview162"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     showgrid="false"
+     inkscape:zoom="0.42781823"
+     inkscape:cx="282.8304"
+     inkscape:cy="404.37735"
+     inkscape:window-width="1360"
+     inkscape:window-height="731"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg160" />
+  <title
+     id="title2">Powered by React</title>
+  <path
+     id="polyline2"
+     style="stroke:#2188ff;stroke-width:32.3371;fill:none"
+     d="M 657.56144,476.85271 851.58375,282.8304 657.56144,88.80809" />
+  <path
+     id="polyline4"
+     style="stroke:#2188ff;stroke-width:32.3371;fill:none"
+     d="M 398.86495,88.80809 204.84264,282.8304 398.86495,476.85271" />
+</svg>
