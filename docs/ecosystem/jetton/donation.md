@@ -1,3 +1,10 @@
+---
+id: donation
+title: Donation
+description: Jetton
+hide_table_of_contents: true
+---
+
 # Donation
 
 ![Donation](./donation.png)

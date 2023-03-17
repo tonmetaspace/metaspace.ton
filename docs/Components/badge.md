@@ -1,3 +1,10 @@
+---
+id: sbt
+title: SBT Metaspace
+description: SBT TON Metaspace
+hide_table_of_contents: true
+---
+
 # SBT Badge
 
 Badges are inline block elements that usually appear near another element. Typically they contain a number or other characters. They can be used as a notificatspace that there are additspaceal items associated with an element and indicate how many items there are.

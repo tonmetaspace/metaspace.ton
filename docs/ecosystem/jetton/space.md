@@ -1,3 +1,10 @@
+---
+id: space
+title: Space
+description: Jetton
+hide_table_of_contents: true
+---
+
 # Space
 
 Logic:
