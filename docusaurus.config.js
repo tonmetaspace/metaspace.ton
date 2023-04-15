@@ -18,6 +18,7 @@ const config = {
   },
   themes: [
     "@docusaurus/theme-live-codeblock",
+    "@docusaurus/theme-mermaid",
     // [
     //   require.resolve('@easyops-cn/docusaurus-search-local'),
     //   {
@@ -72,7 +73,7 @@ const config = {
           ignorePatterns: ["/tags/**"],
           filename: "sitemap.xml",
         },
-        googleAnalytics: {
+        gtag: {
           trackingID: "G-0E7KS06VS6",
           anonymizeIP: true,
         },
@@ -234,6 +235,8 @@ const config = {
           {
             href: "https://github.com/tonmetaspace",
             position: "right",
+            className: "header-github-link",
+            "aria-label": "GitHub repository",
           },
         ],
       },
@@ -381,18 +384,18 @@ const config = {
                             <div class="Title Title--l-1 Title--t-footer Footer__col_header">Build</div>
                             <div class="Footer__col_links">
                                 <div class="Footer__col_link_wrap"> <a class="Footer__col_link"
-                                        href="tonmetaspace.org/docs/whitepaper">
+                                        href="https://tonmetaspace.org/docs/whitepaper">
                                         <div class="Text Text--l-1 Text--t-default">White paper</div>
                                     </a> </div>
-                                <div class="Footer__col_link_wrap"> <a class="Footer__col_link" target="_blank"
+                                <div class="Footer__col_link_wrap"> <a class="Footer__col_link" target="_self"
                                         rel="noreferrer noopener" href="https://tonmetaspace.org/docs">
                                         <div class="Text Text--l-1 Text--t-default">Documentation</div>
                                     </a> </div>
-                                <div class="Footer__col_link_wrap"> <a class="Footer__col_link" target="_blank"
-                                        rel="noreferrer noopener" href="https://tonmetaspace.org/roadmap">
-                                        <div class="Text Text--l-1 Text--t-default">Roadman</div>
+                                <div class="Footer__col_link_wrap"> <a class="Footer__col_link" target="_self"
+                                        rel="noreferrer noopener" href="https://tonmetaspace.org/timeline">
+                                        <div class="Text Text--l-1 Text--t-default">Timeline</div>
                                     </a> </div>
-                                <div class="Footer__col_link_wrap"> <a class="Footer__col_link" target="_blank"
+                                <div class="Footer__col_link_wrap"> <a class="Footer__col_link" target="_self"
                                         rel="noreferrer noopener" href="https://tonmetaspace.org/ambassador-program">
                                         <div class="Text Text--l-1 Text--t-default">Ambassador</div>
                                     </a> </div>
@@ -406,15 +409,15 @@ const config = {
                                         href="https://github.com/tonmetaspace/.github/blob/main/CODE_OF_CONDUCT.md">
                                         <div class="Text Text--l-1 Text--t-default">Code of Conduct</div>
                                     </a> </div>
-                                <div class="Footer__col_link_wrap"> <a class="Footer__col_link" target="_blank"
+                                <div class="Footer__col_link_wrap"> <a class="Footer__col_link" target="_self"
                                         rel="noreferrer noopener" href="https://tonmetaspace.org/license">
                                         <div class="Text Text--l-1 Text--t-default">CC0 License</div>
                                     </a> </div>
-                                <div class="Footer__col_link_wrap"> <a class="Footer__col_link" target="_blank"
+                                <div class="Footer__col_link_wrap"> <a class="Footer__col_link" target="_self"
                                         rel="noreferrer noopener" href="https://github.com/tonmetaspace">
                                         <div class="Text Text--l-1 Text--t-default">GitHub</div>
                                     </a> </div>
-                                <div class="Footer__col_link_wrap"> <a class="Footer__col_link" target="_blank"
+                                <div class="Footer__col_link_wrap"> <a class="Footer__col_link" target="_self"
                                         rel="noreferrer noopener" href="https://github.com/tonmetaspace/issues">
                                         <div class="Text Text--l-1 Text--t-default">Issues</div>
                                     </a> </div>
@@ -423,11 +426,11 @@ const config = {
                         <div class="Footer__col">
                             <div class="Title Title--l-1 Title--t-footer Footer__col_header">Community</div>
                             <div class="Footer__col_links">
-                                <div class="Footer__col_link_wrap"> <a class="Footer__col_link" target="_blank"
+                                <div class="Footer__col_link_wrap"> <a class="Footer__col_link" target="_self"
                                         rel="noreferrer noopener" href="https://tonmetaspace.org/community">
                                         <div class="Text Text--l-1 Text--t-default">Join</div>
                                     </a> </div>
-                                <div class="Footer__col_link_wrap"> <a class="Footer__col_link" target="_blank"
+                                <div class="Footer__col_link_wrap"> <a class="Footer__col_link" target="_self"
                                         rel="noreferrer noopener" href="https://tonmetaspace.org/events">
                                         <div class="Text Text--l-1 Text--t-default">Events</div>
                                     </a> </div>
@@ -436,7 +439,7 @@ const config = {
                         <div class="Footer__col">
                             <div class="Title Title--l-1 Title--t-footer Footer__col_header">Governance</div>
                             <div class="Footer__col_links">
-                                <div class="Footer__col_link_wrap"> <a class="Footer__col_link" target="_blank"
+                                <div class="Footer__col_link_wrap"> <a class="Footer__col_link" target="_self"
                                         rel="noreferrer noopener" href="https://tonmetaspace.org/dao">
                                         <div class="Text Text--l-1 Text--t-default">DAO</div>
                                     </a> </div>
@@ -566,7 +569,7 @@ const config = {
                         </a>
                     </div>
                     <div class="Caption Caption--l-1 Caption--t-footer Footer__copyrights_left">
-                        <div class="Footer__copyrights_year">CC0 2023 TON Metaspace</div></div><div class="Footer__copyleft_right"> <div class="Footer__networks"><div class="NetworkIcon NetworkIcon--large"> </div></a> <a href="https://t.me/tonmetaspace" class="Footer__network" target="_blank" rel="noreferrer noopener"> <div class="NetworkIcon NetworkIcon--large"> <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <rect width="24" height="24" rx="12" fill="#434343"></rect> <path d="M5.39368 11.7355C8.88334 10.1831 11.2103 9.15973 12.3746 8.66527C15.699 7.2535 16.3897 7.00826 16.84 7.00008C16.939 6.99838 17.1604 7.02344 17.3038 7.14226C17.4249 7.2426 17.4583 7.37813 17.4742 7.47325C17.4901 7.56838 17.51 7.78508 17.4942 7.9544C17.3141 9.88701 16.5346 14.5769 16.138 16.7415C15.9702 17.6574 15.6398 17.9645 15.3199 17.9945C14.6248 18.0599 14.0969 17.5255 13.4236 17.0749C12.3701 16.3697 11.7749 15.9308 10.7522 15.2427C9.57034 14.4475 10.3365 14.0104 11.01 13.2962C11.1863 13.1092 14.2492 10.2648 14.3084 10.0067C14.3159 9.97446 14.3227 9.85417 14.2527 9.79065C14.1828 9.72713 14.0794 9.74885 14.0049 9.76612C13.8992 9.79061 12.2162 10.9264 8.95566 13.1736C8.47792 13.5086 8.04521 13.6718 7.6575 13.6632C7.23009 13.6538 6.40793 13.4165 5.79673 13.2136C5.04708 12.9648 4.45127 12.8333 4.50315 12.4107C4.53017 12.1906 4.82702 11.9656 5.39368 11.7355Z" fill="white"></path> </svg> </div></a> <a href="https://github.com/tonmetaspace" class="Footer__network" target="_blank" rel="noreferrer noopener"> <div class="NetworkIcon NetworkIcon--large"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <rect width="24" height="24" rx="12" fill="#98B2BF"></rect> <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7112 23.4144C14.5424 23.7945 13.295 24 12 24C10.704 24 9.45585 23.7943 8.28636 23.4136C8.82659 23.4784 9.02622 23.1266 9.02622 22.8229C9.02622 22.6907 9.02396 22.4575 9.02094 22.1456C9.01745 21.7846 9.01294 21.3182 9.00972 20.7808C5.67147 21.5065 4.96722 19.1709 4.96722 19.1709C4.42197 17.784 3.63522 17.4147 3.63522 17.4147C2.54547 16.6694 3.71772 16.6846 3.71772 16.6846C4.92147 16.7694 5.55522 17.9221 5.55522 17.9221C6.62622 19.7572 8.36397 19.2274 9.04797 18.9196C9.15672 18.1436 9.46722 17.6143 9.80997 17.3142C7.14522 17.0111 4.34397 15.9813 4.34397 11.3799C4.34397 10.0687 4.81122 8.99704 5.57922 8.15715C5.45547 7.85327 5.04372 6.63288 5.69622 4.97947C5.69622 4.97947 6.70422 4.65671 8.99622 6.21032C9.95397 5.94382 10.98 5.81113 12.0007 5.80571C13.02 5.81094 14.0467 5.94382 15.0052 6.21032C17.2957 4.65671 18.3015 4.97947 18.3015 4.97947C18.9562 6.63288 18.5445 7.85327 18.4207 8.15715C19.1902 8.99704 19.6545 10.0687 19.6545 11.3799C19.6545 15.9925 16.8487 17.0081 14.1757 17.3052C14.6062 17.676 14.9902 18.4084 14.9902 19.529C14.9902 20.6025 14.9835 21.537 14.9791 22.1563C14.9769 22.4631 14.9752 22.6925 14.9752 22.8231C14.9752 23.1282 15.17 23.4807 15.7112 23.4144Z" fill="white"></path> </svg> </div></a> <a href="https://twitter.com/tonmetaspace" class="Footer__network" target="_blank" rel="noreferrer noopener"> <div class="NetworkIcon NetworkIcon--large"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <rect width="24" height="24" rx="12" fill="#98B2BF"></rect> <path d="M17.8812 9.40625C17.8812 9.5375 17.8812 9.66875 17.8812 9.78125C17.8812 13.6625 14.9187 18.1437 9.51875 18.1437C7.85 18.1437 6.3125 17.6562 5 16.8312C5.225 16.85 5.46875 16.8687 5.69375 16.8687C7.0625 16.8687 8.3375 16.4 9.35 15.6125C8.05625 15.5937 6.96875 14.7312 6.6125 13.5687C6.8 13.6062 6.96875 13.625 7.175 13.625C7.4375 13.625 7.7 13.5875 7.94375 13.5125C6.59375 13.25 5.58125 12.0687 5.58125 10.6437C5.58125 10.625 5.58125 10.625 5.58125 10.6062C5.975 10.8312 6.425 10.9625 6.9125 10.9812C6.125 10.4562 5.6 9.55625 5.6 8.525C5.6 7.98125 5.75 7.475 5.99375 7.04375C7.4375 8.825 9.6125 9.9875 12.05 10.1187C11.9937 9.9125 11.975 9.66875 11.975 9.44375C11.975 7.8125 13.2875 6.5 14.9187 6.5C15.7625 6.5 16.5312 6.85625 17.0562 7.41875C17.7312 7.2875 18.35 7.04375 18.9312 6.70625C18.7062 7.4 18.2375 7.9625 17.6375 8.3375C18.2375 8.2625 18.8 8.1125 19.325 7.86875C18.95 8.46875 18.4625 8.99375 17.8812 9.40625Z" fill="white"></path> </svg> </div></a> <a href="mailto:press@ton.org" class="Footer__network" target="_blank" rel="noreferrer noopener"> <div class="NetworkIcon NetworkIcon--large"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <circle cx="12" cy="12" r="12" fill="#98B2BF"></circle> <path d="M12.0033 11.3576L17.409 8.18617C17.0931 7.71875 16.5675 7.43669 16.0033 7.43188H8.00332C7.4362 7.43164 6.90566 7.71188 6.58618 8.18046L12.0033 11.3576Z" fill="white"></path> <path d="M12.5748 12.3404C12.4012 12.4411 12.2041 12.4944 12.0033 12.4947C11.8031 12.4961 11.6061 12.4449 11.4319 12.3461L6.28906 9.33472V14.8604C6.28906 15.8072 7.05657 16.5747 8.00335 16.5747H16.0033C16.9501 16.5747 17.7176 15.8072 17.7176 14.8604V9.33472L12.5748 12.3404Z" fill="white"></path> </svg> </div>
+                        <div class="Footer__copyrights_year">CC0 2023 TON Foundation grants program</div></div><div class="Footer__copyleft_right"> <div class="Footer__networks"><div class="NetworkIcon NetworkIcon--large"> </div></a> <a href="https://t.me/tonmetaspace" class="Footer__network" target="_blank" rel="noreferrer noopener"> <div class="NetworkIcon NetworkIcon--large"> <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <rect width="24" height="24" rx="12" fill="#434343"></rect> <path d="M5.39368 11.7355C8.88334 10.1831 11.2103 9.15973 12.3746 8.66527C15.699 7.2535 16.3897 7.00826 16.84 7.00008C16.939 6.99838 17.1604 7.02344 17.3038 7.14226C17.4249 7.2426 17.4583 7.37813 17.4742 7.47325C17.4901 7.56838 17.51 7.78508 17.4942 7.9544C17.3141 9.88701 16.5346 14.5769 16.138 16.7415C15.9702 17.6574 15.6398 17.9645 15.3199 17.9945C14.6248 18.0599 14.0969 17.5255 13.4236 17.0749C12.3701 16.3697 11.7749 15.9308 10.7522 15.2427C9.57034 14.4475 10.3365 14.0104 11.01 13.2962C11.1863 13.1092 14.2492 10.2648 14.3084 10.0067C14.3159 9.97446 14.3227 9.85417 14.2527 9.79065C14.1828 9.72713 14.0794 9.74885 14.0049 9.76612C13.8992 9.79061 12.2162 10.9264 8.95566 13.1736C8.47792 13.5086 8.04521 13.6718 7.6575 13.6632C7.23009 13.6538 6.40793 13.4165 5.79673 13.2136C5.04708 12.9648 4.45127 12.8333 4.50315 12.4107C4.53017 12.1906 4.82702 11.9656 5.39368 11.7355Z" fill="white"></path> </svg> </div></a> <a href="https://github.com/tonmetaspace" class="Footer__network" target="_blank" rel="noreferrer noopener"> <div class="NetworkIcon NetworkIcon--large"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <rect width="24" height="24" rx="12" fill="#98B2BF"></rect> <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7112 23.4144C14.5424 23.7945 13.295 24 12 24C10.704 24 9.45585 23.7943 8.28636 23.4136C8.82659 23.4784 9.02622 23.1266 9.02622 22.8229C9.02622 22.6907 9.02396 22.4575 9.02094 22.1456C9.01745 21.7846 9.01294 21.3182 9.00972 20.7808C5.67147 21.5065 4.96722 19.1709 4.96722 19.1709C4.42197 17.784 3.63522 17.4147 3.63522 17.4147C2.54547 16.6694 3.71772 16.6846 3.71772 16.6846C4.92147 16.7694 5.55522 17.9221 5.55522 17.9221C6.62622 19.7572 8.36397 19.2274 9.04797 18.9196C9.15672 18.1436 9.46722 17.6143 9.80997 17.3142C7.14522 17.0111 4.34397 15.9813 4.34397 11.3799C4.34397 10.0687 4.81122 8.99704 5.57922 8.15715C5.45547 7.85327 5.04372 6.63288 5.69622 4.97947C5.69622 4.97947 6.70422 4.65671 8.99622 6.21032C9.95397 5.94382 10.98 5.81113 12.0007 5.80571C13.02 5.81094 14.0467 5.94382 15.0052 6.21032C17.2957 4.65671 18.3015 4.97947 18.3015 4.97947C18.9562 6.63288 18.5445 7.85327 18.4207 8.15715C19.1902 8.99704 19.6545 10.0687 19.6545 11.3799C19.6545 15.9925 16.8487 17.0081 14.1757 17.3052C14.6062 17.676 14.9902 18.4084 14.9902 19.529C14.9902 20.6025 14.9835 21.537 14.9791 22.1563C14.9769 22.4631 14.9752 22.6925 14.9752 22.8231C14.9752 23.1282 15.17 23.4807 15.7112 23.4144Z" fill="white"></path> </svg> </div></a> <a href="https://twitter.com/tonmetaspace" class="Footer__network" target="_blank" rel="noreferrer noopener"> <div class="NetworkIcon NetworkIcon--large"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <rect width="24" height="24" rx="12" fill="#98B2BF"></rect> <path d="M17.8812 9.40625C17.8812 9.5375 17.8812 9.66875 17.8812 9.78125C17.8812 13.6625 14.9187 18.1437 9.51875 18.1437C7.85 18.1437 6.3125 17.6562 5 16.8312C5.225 16.85 5.46875 16.8687 5.69375 16.8687C7.0625 16.8687 8.3375 16.4 9.35 15.6125C8.05625 15.5937 6.96875 14.7312 6.6125 13.5687C6.8 13.6062 6.96875 13.625 7.175 13.625C7.4375 13.625 7.7 13.5875 7.94375 13.5125C6.59375 13.25 5.58125 12.0687 5.58125 10.6437C5.58125 10.625 5.58125 10.625 5.58125 10.6062C5.975 10.8312 6.425 10.9625 6.9125 10.9812C6.125 10.4562 5.6 9.55625 5.6 8.525C5.6 7.98125 5.75 7.475 5.99375 7.04375C7.4375 8.825 9.6125 9.9875 12.05 10.1187C11.9937 9.9125 11.975 9.66875 11.975 9.44375C11.975 7.8125 13.2875 6.5 14.9187 6.5C15.7625 6.5 16.5312 6.85625 17.0562 7.41875C17.7312 7.2875 18.35 7.04375 18.9312 6.70625C18.7062 7.4 18.2375 7.9625 17.6375 8.3375C18.2375 8.2625 18.8 8.1125 19.325 7.86875C18.95 8.46875 18.4625 8.99375 17.8812 9.40625Z" fill="white"></path> </svg> </div></a> <a href="mailto:press@ton.org" class="Footer__network" target="_blank" rel="noreferrer noopener"> <div class="NetworkIcon NetworkIcon--large"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <circle cx="12" cy="12" r="12" fill="#98B2BF"></circle> <path d="M12.0033 11.3576L17.409 8.18617C17.0931 7.71875 16.5675 7.43669 16.0033 7.43188H8.00332C7.4362 7.43164 6.90566 7.71188 6.58618 8.18046L12.0033 11.3576Z" fill="white"></path> <path d="M12.5748 12.3404C12.4012 12.4411 12.2041 12.4944 12.0033 12.4947C11.8031 12.4961 11.6061 12.4449 11.4319 12.3461L6.28906 9.33472V14.8604C6.28906 15.8072 7.05657 16.5747 8.00335 16.5747H16.0033C16.9501 16.5747 17.7176 15.8072 17.7176 14.8604V9.33472L12.5748 12.3404Z" fill="white"></path> </svg> </div>
                             </a> </div>
                     </div>
                 </div>
@@ -792,7 +795,7 @@ const config = {
 
     .Footer__copyrights_left,
     .Footer__copyrights_left a {
-        color: var(--text_light_secondary)
+        color: #2188ff;
     }
 
     .Footer__networks {
