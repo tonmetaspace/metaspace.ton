@@ -1,0 +1,4 @@
+---
+id: template
+title: Template
+---
