@@ -61,6 +61,14 @@ e. Airdrop
 
 f. [Metaspace Ambassador DAO](https://tonmetaspace.org/ambassador-program)
 
+## Who uses Donation?
+
+Donation can be used in many situations where someone would normally put their hands together. This can make the conversation more interesting because it's like showing something real with an Jetton.
+
+In Japan and some other Asian countries, when you put your hands together like in the folded hands emoji, it can mean more than just being spiritual. It can also mean asking for something, saying thank you, or apologizing.
+
+`Donating` Jetton can also be a way to say thank you. For example, if someone has really great friends, they might send them Jettons as a way of showing how grateful they are to have them in their life. People can also use Donation to ask for something politely, like when they want their favorite `Virtual Idols` to appear in `Metaspace`. Donation looks like two hands, so it's a good way to show something that's similar to real life.
+
 ## Protect yourself and your users
 
 Don't forget that here we are dealing with programmable money. Jettons can be sold and users can end up paying real money for them. Our responsibility as a community is to ensure the safety of everyone.
@@ -83,13 +91,15 @@ Color background: `#0088cc`
 
 The emoji where two hands are folded together can mean many different things. Some good things like feeling thankful, connected to a higher power, or having faith in something. But it can also mean asking for help, wishing for something, or really wanting a specific result.
 
-## Who uses Donation?
+# Allocation
 
-Donation can be used in many situations where someone would normally put their hands together. This can make the conversation more interesting because it's like showing something real with an Jetton.
-
-In Japan and some other Asian countries, when you put your hands together like in the folded hands emoji, it can mean more than just being spiritual. It can also mean asking for something, saying thank you, or apologizing.
-
-`Donating` Jetton can also be a way to say thank you. For example, if someone has really great friends, they might send them Jettons as a way of showing how grateful they are to have them in their life. People can also use Donation to ask for something politely, like when they want their favorite `Virtual Idols` to appear in `Metaspace`. Donation looks like two hands, so it's a good way to show something that's similar to real life.
+```mermaid
+pie title Holders
+"TON Metaspace":20
+"Morgenshtern":13
+"Disintar Marketplace":2
+"TON Foundation":2
+```
 
 # How create LP TON/JTON/DON
 
@@ -102,75 +112,7 @@ In Japan and some other Asian countries, when you put your hands together like i
 - [DON-JTON LP Contract](https://tonscan.org/jetton/EQD6EKBOHIxy3DU6wzFm4FbQNcVEZn0x0t3xIPVNPeDKR-Qz)
 - [DON AMM Contract](https://tonverifier.live/EQCIaJJXSZjOvrchgXXOy90PIS51mMOXMBcmlkUvnIKk9Od5)
 
-## [Dedust](https://dedust.io)
-
-![Dedust]pic
-
-Open [dedust.io](https://dedust.io/dex/liquidity)
-
-![Connect]pic
-
-Choose a Wallet
-
-![Wrapped]pic
-
-Choose a Wrapped TON
-
-![Amount]pic
-
-Press `Wrap`
-
-![Confirm]pic
-
-Confirm
-
-![Received]pic
-
-Press `Close`
-
-![Activate]pic
-
-Press `Activate`
-
-![Tx]pic
-
-Confirm
-
-![New]pic
-
-Press `New Position`
-
-![Address]pic
-
 Add address Donation Jetton `EQDEcJlTPBymzUqOJ15QR44vIlPIHhsWllrIafWpPdeHiuNR`
-
-![JTONDON]pic
-
-Press `Connect JTON / DON`
-
-![Pair]pic
-
-Pair was succesfully connected!
-
-![Deposit]pic
-
-Press `Deposit JTON`
-
-![DEPJTON]pic
-
-Deposited
-
-![DEPDON]pic
-
-Press `Deposit Donation`
-
-![DEPDONCON]pic
-
-Deposited
-
-![Liquidity]pic
-
-You created liquidity position!
 
 ## Source Code
 
@@ -961,13 +903,3 @@ Add address Donation Jetton `EQDEcJlTPBymzUqOJ15QR44vIlPIHhsWllrIafWpPdeHiuNR`
 ## License
 
 [CC0](https://github.com/mir-one/donation/blob/main/LICENSE)
-
-| Liquidity (TVL) |     |     |     |
-| --------------- | --- | --- | --- |
-|                 |     |     |     |
-|                 |     |     |     |
-|                 |     |     |     |
-|                 |     |     |     |
-| Total LP-DON    |     |     |     |
-
-TVL
