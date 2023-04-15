@@ -1,7 +1,7 @@
 ---
 id: ambassador-program
 title: Ambassador Program
-description: This description will override the default.
+description: This program is meant to be enjoyable and not take up all your time. We want you to have fun and not worry about getting things done by a certain deadline. Instead, we want to recognize and reward you for the contributions you make to TON and Metaspace.
 hide_table_of_contents: true
 ---
 
@@ -26,3 +26,97 @@ The community is really important for Web3 businesses that work in a decentraliz
 | 3. After the ambassadors finish the work they agreed to do, they turn it in so that someone can look at it and make sure it's done correctly.                                                                                                                                                         | This is a way for people who are really good at helping out and making a difference in the community to become leaders and help others do the same.                                                                                                                                                |
 | 4. Oracles called "reviewers" check to make sure that the work the ambassadors did meets all the goals and requirements that were set. If it does, then the ambassador gets the reward that was promised.                                                                                             | Donation is a way to make sure that people who want to help out and make a difference can do so for a long time, and that they get rewarded for their contributions. It involves using special tools and ways of doing things to make sure that everyone can work together and make things happen. |
 | 5. 🙏 It's really easy!                                                                                                                                                                                                                                                                               | [Code of Conduct](https://github.com/tonmetaspace/.github/blob/main/CODE_OF_CONDUCT.md)                                                                                                                                                                                                            |
+
+# For everyone passionate about Metaspace and inspired by TON.
+
+We invite you to contribute to the development and promotion of TON in the international arena.
+
+### Theory
+
+Theory and practice from Metaspace
+
+### Make content
+
+Documentation, instructions, manuals, localization, scientific papers,
+
+### Communicate
+
+Metaspace and offline (meetups, TONCon, social networks, collaborations)
+
+### Get Rewards
+
+`Donation` reward every day, additional bonuses and gifts for the TOP-100 ambassadors.
+
+## How to become
+
+### Metaspace makers
+
+| What you may do                                               | How                                                                     |
+| ------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| work with technical documentation, instructions and tutorials | make pull requests on GitHub for website                                |
+| translate content into your native language                   | discuss what we need to translate in ambassador chat                    |
+| make scientific papers based on TON technologies              | create video and text content, try to make it unique for your followers |
+| popularize ideas of Metaspace                                 | share progress with other ambassadors and team                          |
+
+### Community helpers
+
+| What you may do                                                                                                           | How                                            |
+| ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
+| organize local offline meetups and hackathons based on Metaspace                                                          | make your suggestion in ambassador’s chat      |
+| participate in thematic conferences on behalf of TONCon Metaspace                                                         | get merchandise if needed for offline events   |
+| work online with community: online meetups and hackathons, chat administration, forum moderation, various social networks | share progress with other ambassadors and team |
+| communicate with other projects for collaboration                                                                         |                                                |
+
+```mermaid
+    sequenceDiagram
+    box Metaspace grants
+    participant Board
+    participant Status
+    participant Space
+    participant DAO
+    participant Working
+    participant Applicants
+    end
+    Note over Status: No status
+    Working->>Status: Create grant!
+    Note over Status: Proposed
+    Working->>Status: Add reward!
+    Status-->>DAO: Proposed
+    DAO->>Status: Votes on task
+    Note over  DAO: Quorum
+    par Status to DAO
+    Status-->>DAO: Quorum conditions
+    end
+    par Status to Working
+
+    Note over Status: Rejected
+    Working->>Status: Cancel
+    Note over Working: Finish voting
+    Status-->>Applicants: Status: Ready to apply
+    Note over Status: Apply
+    Note over Status: Abstain
+    Working-->>Status: TON.VOTE
+    end
+
+    Note over Board: Approve grant
+    Note over Board: Approve performer
+    Note over Board: Approve solution
+    Status->Applicants: Proposed
+
+
+
+    Note over Status: Ready to apply
+    Note over Status: Team chosen
+    Note over Status: In progress
+    Note over Status: Finished
+    Note over  DAO: Create grant
+    Note over  DAO: Add reward
+    Note over  DAO: Voting for grant
+
+```
+
+# How
+
+After you submit your application, please give us time to assign your application to a regional reviewer more appropriate for your time zone, as well as time to review your application. As soon as we complete our review, you will receive either an offer with a call to improve several areas before admission, or an invitation to an interview for further adaptation process.
+
+> The number of participants in the program is limited by the number of available seats on one room of the Metaspace
