@@ -4,7 +4,44 @@ title: License CC0
 hide_table_of_contents: false
 ---
 
-# CC0
+# License information CC0
+
+![CC0](https://creativecommons.org/wp-content/uploads/2022/07/CCLogoColorPop1.gif)
+
+## HTML
+
+```html
+<p
+  xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:dct="http://purl.org/dc/terms/"
+>
+  <a
+    property="dct:title"
+    rel="cc:attributionURL"
+    href="https://tonmetaspace.org/license"
+    >Metaspace License</a
+  >
+  by
+  <a
+    rel="cc:attributionURL dct:creator"
+    property="cc:attributionName"
+    href="https://github.com/tonmetaspace"
+    >Metaspace</a
+  >
+  is marked with
+  <a
+    href="http://creativecommons.org/publicdomain/zero/1.0?ref=chooser-v1"
+    target="_blank"
+    rel="license noopener noreferrer"
+    style="display:inline-block;"
+    >CC0 1.0<img
+      style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+      src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" /><img
+      style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+      src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1"
+  /></a>
+</p>
+```
 
 ## “No Rights Reserved”
 
@@ -30,6 +67,8 @@ You should only apply CC0 to your own work, unless you have the necessary rights
 
 - [TON Fingerprints](https://github.com/mir-one/fingerprints)
 - [TON CON](https://github.com/DAO-TON-CON/boilerpoint/blob/main/TONCON.metaspace#L6)
+
+## Metaspace License
 
 ## More info
 
