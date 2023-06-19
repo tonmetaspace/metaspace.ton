@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "Metaspace",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Metaspace Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Docs": {
+    "message": "Docs",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.Metaverse": {
+    "message": "Metaverse",
+    "description": "Navbar item with label Metaverse"
+  },
+  "item.label.Quests": {
+    "message": "Quests",
+    "description": "Navbar item with label Quests"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  }
+}
