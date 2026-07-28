@@ -9270,6 +9270,16 @@ serialize-javascript@^6.0.1:
   dependencies:
     randombytes "^2.1.0"
 
+seroval-plugins@~1.5.4:
+  version "1.5.6"
+  resolved "https://registry.yarnpkg.com/seroval-plugins/-/seroval-plugins-1.5.6.tgz#7bca495aceb5b2428b9cb44b4b09e67c2de1c948"
+  integrity sha512-HXuLAX2pu/UByPpaeo/TaMfvMIi+1QqIoPJYCcAtU8QkVNwgR6MPlGuCQTErV1JwraaMbYaWVIBX7mppzGLATQ==
+
+seroval@~1.5.4:
+  version "1.5.6"
+  resolved "https://registry.yarnpkg.com/seroval/-/seroval-1.5.6.tgz#68d4f6a05c3bde25daaaea6b7220146ff42353ca"
+  integrity sha512-rVQVWjjSvlINzaQPZH5JFqsqEsIWdTxY3iJZCnTL/5gQbXIRooVZKI60tVCkOVfzcRPejboxO2t0P89dg5mQaA==
+
 serve-handler@^6.1.5:
   version "6.1.5"
   resolved "https://registry.npmjs.org/serve-handler/-/serve-handler-6.1.5.tgz"
@@ -9470,11 +9480,13 @@ solid-floating-ui@^0.2.0:
   integrity sha512-ZWVigPZjisSY7GkAKzZpDoY6Eb0NWSakaF7tut5jkW0ls9BB/bk7Jhsxd8l0JoU3KaxYH15GYcpuM0fU06kc/A==
 
 solid-js@^1.5.1:
-  version "1.6.15"
-  resolved "https://registry.npmjs.org/solid-js/-/solid-js-1.6.15.tgz"
-  integrity sha512-xEuMUIdDf4YRFT4i3XEJCNg4Y21lZiWWPSEqj0R3UnLLpENGJVXkqpmbIyRU5CuMImKPIEu5CYgmFKL7Npfe1A==
+  version "1.9.14"
+  resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-1.9.14.tgz#b1a7b306400b34868d00723b34ec9147f34509fb"
+  integrity sha512-sAEXC0Kk0S1EDg+8ysEWJDbYhA3RRoEjwuySUGlKIemeo0I5YZfOyumNjNs9Sv3y2nmhD+0rW66ag2HsMuQiGQ==
   dependencies:
     csstype "^3.1.0"
+    seroval "~1.5.4"
+    seroval-plugins "~1.5.4"
 
 solid-styled-components@^0.28.5:
   version "0.28.5"
